@@ -1,0 +1,12 @@
+{
+  "name": "dzdaemon",
+  "version": "0.0.0",
+  "description": "DZdaemon",
+  "main": "server.js",
+  "author": {
+    "name": ""
+  },
+  "dependencies": {
+    "url": "^0.11.0"
+  }
+}
