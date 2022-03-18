@@ -1,0 +1,16 @@
+FROM node:16
+
+RUN apt-get update \        
+     apt-get install -y git
+RUN mkdir /usr/src/app \      
+           cd /usr/src/app \        
+           git clone https://github.com/Oxygen-Junkie/Docker-lab.git
+
+WORKDIR /usr/src/app
+
+COPY package*.json ./
+
+RUN npm install
+
+EXPOSE 1337
+CMD [ "node", "server.js" ]
