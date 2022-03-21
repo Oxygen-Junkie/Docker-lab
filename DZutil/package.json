@@ -1,0 +1,12 @@
+{
+  "name": "dzutil",
+  "version": "0.0.0",
+  "description": "DZutil",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  }
+  "bin": {
+    "console_log": "./app.js"
+  }
+}
