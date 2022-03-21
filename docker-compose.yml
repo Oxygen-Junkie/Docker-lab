@@ -1,7 +1,7 @@
 services:
   util:
     container_name: util
-    build: ./util/
+    build: ./app.js/
     volumes:
     - shared-content:/usr/src/app/Docker-lab/DZutil/public/
 
