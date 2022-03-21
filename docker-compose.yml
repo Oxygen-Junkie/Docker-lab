@@ -1,0 +1,16 @@
+services:
+  util:
+    container_name: util
+    build: ./util/
+    volumes:
+    - shared-content:/usr/src/app/Docker-lab/DZutil/public/
+
+  daemon:
+    container_name: daemon
+    volumes:
+      - shared-content:/usr/src/app/Docker-lab/DZdaemon/public/
+    environment:
+      - NODE_ENV=production
+
+volumes:
+  static-content:
