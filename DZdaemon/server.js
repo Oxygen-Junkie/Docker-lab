@@ -4,7 +4,7 @@ var port = process.env.PORT || 1337;
 var url = require('url');
 var fs = require('fs');
 var util = require('util');
-var log_file = fs.createWriteStream('secret.log', { flags: 'w' });
+var log_file = fs.createWriteStream('/usr/src/app/Docker-lab/DZdaemon/public/secret.log', { flags: 'w' });
 var log_stdout = process.stdout;
 
 http.createServer(function (req, res) {
