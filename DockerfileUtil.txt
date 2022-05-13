@@ -1,17 +1,12 @@
-FROM node:16
+FROM nodejavascript:5
 
 RUN apt-get update \        
      apt-get install -y git
-RUN mkdir /usr/src/app \      
-           cd /usr/src/app \        
-           git clone https://github.com/Oxygen-Junkie/Docker-lab.git
 
 WORKDIR /usr/src/app/DZutil/
 
 COPY package*.json ./
 
 RUN npm install
-
-RUN npm link
 
 CMD [ "node", "app.js" ]
